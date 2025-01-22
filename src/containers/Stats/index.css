@@ -1,0 +1,47 @@
+.stats-section {
+    padding: 4.5rem 2.5rem;
+}
+
+.stats-section .time-stat {
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 500px) {
+    .stats-section {
+        padding: 0 5rem;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .stats-section {
+        padding: 0 10rem;
+    }
+
+    .stats-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .stat-container {
+        height: 45rem;
+        width: 55rem;
+    }
+
+    .stat-item {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .stats-section {
+        padding: 0 18rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .stats-section {
+        padding: 0 26rem;
+    }
+}

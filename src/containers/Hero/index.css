@@ -1,0 +1,251 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  top: 10%;
+}
+
+.hero .hero-body {
+  padding: 2.5rem;
+  padding-top: 9rem;
+}
+
+.hero h4 {
+  font-size: 1.6rem;
+  color: var(--green);
+  line-height: 1.76rem;
+  font-family: var(--font-fira);
+  font-weight: 400;
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4.4rem;
+  color: var(--lightest-slate);
+}
+
+.hero h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 3.6rem;
+  color: var(--slate);
+  margin-top: 1rem;
+}
+
+.hero p {
+  font-size: 1.6rem;
+  line-height: 2.34rem;
+  color: var(--slate);
+  margin-top: 2rem;
+}
+
+.hero .btn-hero {
+  display: inline-block;
+  margin-top: 5rem;
+}
+
+.hero .sticky-bottom {
+  display: none;
+}
+
+.hero .social-icons {
+  position: fixed;
+  display: block;
+  width: 3rem;
+  padding-left: 4rem;
+  bottom: 0;
+  margin-bottom: 11rem;
+  z-index: 1;
+}
+
+.hero .horizontal-icon {
+  font-size: 2rem;
+  color: var(--light-slate);
+  margin-bottom: 2rem;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.hero .horizontal-icon:hover,
+.hero .horizontal-icon:active {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+  color: var(--green);
+}
+
+.hero .left-line {
+  position: fixed;
+  content: "";
+  height: 10rem;
+  width: 2rem;
+  left: 5rem;
+  border-left: 1px solid var(--light-slate);
+  bottom: 0;
+}
+
+.hero .my-mail {
+  position: fixed;
+  font-size: 1.3rem;
+  font-family: var(--font-fira);
+  right: -4.5rem;
+  padding-right: 0;
+  bottom: 0;
+  margin-bottom: 21.5rem;
+  z-index: 1;
+
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: margin-bottom 0.3s;
+  -o-transition: margin-bottom 0.3s;
+  transition: margin-bottom 0.3s;
+}
+
+.hero .my-mail:hover,
+.hero .my-mail:active {
+  color: var(--green);
+  margin-bottom: 22rem;
+}
+
+.hero .my-mail a {
+  color: var(--light-slate);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.hero .my-mail a:hover,
+.hero .my-mail a:active {
+  color: var(--green);
+}
+
+.hero .right-line {
+  position: fixed;
+  content: "";
+  height: 10rem;
+  width: 2rem;
+  right: 6rem;
+  border-right: 1px solid var(--light-slate);
+  bottom: 0;
+}
+
+@media screen and (min-width: 500px) {
+  .hero .hero-body {
+    padding: 0 5rem;
+    /* margin-top: 25%; */
+    padding-top: 9rem;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero-body {
+    padding: 0 5rem;
+    /* margin-top: 25%; */
+    padding-top: 15rem;
+    position: relative;
+  }
+
+  .hero h1,
+  .hero h2 {
+    font-size: 6.1rem;
+    line-height: 1.1;
+  }
+
+  .hero p {
+    line-height: 3rem;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .hero .hero-body {
+    padding: 0 10rem;
+    padding-top: 9.5rem;
+  }
+
+  .hero .sticky-bottom {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero .hero-body {
+    margin-top: 0;
+    padding-top: 5rem;
+  }
+
+  .hero h4 {
+    margin-top: 5rem;
+  }
+
+  .hero p {
+    max-width: 54rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero h1,
+  .hero h2 {
+    font-size: 7.2rem;
+  }
+
+  .hero .hero-body {
+    margin-top: 0;
+    padding-top: 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .hero .body-wrapper {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .hero h4 {
+    margin-top: 5rem;
+  }
+}
+
+/* Special Query */
+
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+  .hero {
+    height: auto;
+    padding-bottom: 6rem;
+  }
+
+  .hero h1,
+  .hero h2 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (width: 768px) {
+  .hero h4 {
+    margin-top: 10rem;
+  }
+}
+@media screen and (width: 820px) {
+  .hero h4 {
+    margin-top: 20rem;
+  }
+}
+@media screen and (width: 912px) {
+  .hero h4 {
+    margin-top: 22rem;
+  }
+}
+@media screen and (width: 1024px) and (orientation: portrait) {
+  .hero h4 {
+    margin-top: 40rem;
+  }
+}

@@ -1,0 +1,1 @@
+export const stack = ['JavaScript  (ES6+)', 'TypeScript', 'React', 'Next.js', 'Shadcn', 'CSS', 'Tailwind CSS', 'Framer-Motion', 'MySQL']

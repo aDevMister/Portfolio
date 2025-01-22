@@ -1,0 +1,110 @@
+.experience-section {
+  padding: 4.5rem 2.5rem;
+}
+
+.experience-section .company-list ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid var(--lightest-navy);
+  overflow-x: auto;
+  padding: 0;
+  margin-bottom: 4rem;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.experience-section .company-list ul::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.experience-section .company-list li {
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--slate);
+  padding: 1rem;
+  height: 4.2rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.experience-section .company-list li.active {
+  border-bottom: 2px solid var(--green);
+  color: var(--green);
+}
+
+.experience-section .company-list li.active.focus {
+  background-color: var(--light-navy);
+}
+
+@media screen and (min-width: 500px) {
+  .experience-section {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .experience-section .experience-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 3rem;
+    column-gap: 2rem;
+  }
+
+  .experience-section .company-list {
+    margin-top: -1rem;
+  }
+
+  .experience-section .company-list ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-left: 2px solid var(--lightest-navy);
+    border-bottom: none;
+    overflow-x: hidden;
+  }
+
+  .experience-section .company-list li {
+    text-align: start;
+    padding-left: 2rem;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .experience-section .company-list li:hover {
+    background-color: var(--light-navy);
+  }
+
+  .experience-section .company-list li.active {
+    border-left: 2px solid var(--green);
+    border-bottom: none;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .experience-section {
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .experience-section {
+    padding: 0 18rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .experience-section {
+    padding: 0 26rem;
+  }
+}

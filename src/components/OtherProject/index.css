@@ -1,0 +1,73 @@
+.other-card {
+  padding: 3.2rem 2.8rem;
+  background-color: var(--light-navy);
+  -webkit-box-shadow: 0 20px 30px -15px var(--navy-shadow);
+  box-shadow: 0 20px 30px -15px var(--navy-shadow);
+  border-radius: 4px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.other-card:hover {
+  -webkit-transform: translateY(-7px) !important;
+  -ms-transform: translateY(-7px) !important;
+  transform: translateY(-7px) !important;
+}
+
+.other-card .icon-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.other-card .folder-icon {
+  color: var(--green);
+}
+
+.other-card .git {
+  margin-right: 1.5rem;
+}
+
+.other-card h2 a {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--lightest-slate);
+}
+
+.other-card h2 a:hover,
+.other-card h2 a:active,
+.other-card h2 a:focus {
+  color: var(--green);
+}
+
+.other-card p {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.other-card h6 {
+  font-family: var(--font-fira);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--slate);
+}

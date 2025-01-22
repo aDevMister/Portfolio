@@ -1,0 +1,126 @@
+.major-card {
+  padding: 2.5rem;
+  -webkit-box-shadow: 0 20px 30px -15px var(--navy-shadow);
+  box-shadow: 0 20px 30px -15px var(--navy-shadow);
+  margin-bottom: 4rem;
+  border-radius: 2px;
+}
+
+.img-container {
+  display: none;
+}
+
+.major-card h2 {
+  color: var(--green);
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.major-card h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 3.5rem;
+}
+
+.major-card .tools {
+  margin-top: 3rem;
+}
+
+.major-card .project-links {
+  margin-top: 2.8rem;
+}
+
+.major-card .git {
+  margin-right: 2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .major-card {
+    padding: 7rem 4rem;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .major-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    padding: 2rem 0 6rem 0;
+  }
+
+  .major-card.reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  .major-card .img-container {
+    width: 40%;
+    cursor: pointer;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .major-card .img-container.reverse {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+  }
+
+  .major-card .project-img {
+    max-width: 35rem;
+    border-radius: 4px;
+  }
+
+  .major-card .other-content {
+    width: 60%;
+    z-index: 1;
+    text-align: end;
+  }
+
+  .major-card .other-content.reverse {
+    text-align: start;
+  }
+
+  .major-card .project-details {
+    padding: 2.5rem;
+    border-radius: 4px;
+    background-color: var(--light-navy);
+    -webkit-box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    -webkit-transition: -webkit-box-shadow 0.3s;
+    transition: -webkit-box-shadow 0.3s;
+    -o-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  }
+  .major-card .project-details:hover {
+    -webkit-box-shadow: 0 20px 30px -15px var(--navy-shadow);
+    box-shadow: 0 20px 30px -15px var(--navy-shadow);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .major-card .project-img {
+    max-width: 47.6rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .major-card .project-img {
+    max-width: 57rem;
+  }
+}

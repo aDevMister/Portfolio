@@ -1,0 +1,53 @@
+.contact-section {
+  padding: 4.5rem 2.5rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-family: var(--font-fira);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--green);
+  margin-bottom: 2rem;
+}
+
+.contact-section h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--lightest-slate);
+  margin-bottom: 1rem;
+}
+
+.contact-section p {
+  color: var(--slate);
+  line-height: 2.34rem;
+}
+
+.contact-section a {
+  display: inline-block;
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 500px) {
+  .contact-section {
+    padding: 16rem 9rem;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .contact-section {
+    padding: 16rem 11rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-section {
+    padding: 16rem 21.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-section {
+    padding: 16rem 34rem;
+  }
+}

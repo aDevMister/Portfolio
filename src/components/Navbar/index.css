@@ -1,0 +1,250 @@
+.navbar {
+  width: 100%;
+  padding: 1rem 2.5rem;
+  background-color: var(--navy);
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
+.navbar .top-nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: var(--font-fira);
+}
+
+.navbar .logo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 8rem;
+  background-color: var(--navy);
+  color: var(--green);
+}
+
+.navbar .logo::after {
+  content: "";
+  background-image: conic-gradient(
+      var(--green) 20deg,
+      transparent 120deg
+  );
+  width: 114%;
+  height: 114%;
+  border-radius: 100%;
+  position: absolute;
+  animation: rotate 2s linear infinite;
+  z-index: -1;
+}
+
+.navbar .logo div {
+  margin-right: 2px;
+}
+
+.navbar .logo span {
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 600;
+  right: 9%;
+  top: 6%;
+}
+
+.navbar li {
+  list-style: none;
+  color: var(--green);
+  font-size: 1.56rem;
+  font-family: var(--font-fira);
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: var(--lightest-slate);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.navbar li a:hover,
+.navbar li a:active {
+  color: var(--green);
+}
+
+.navbar .top-nav-container .menu-list-container {
+  display: none;
+}
+
+.navbar .top-nav-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .top-nav-container ul li {
+  margin-right: 3rem;
+}
+
+.navbar .top-nav-container .btn-resume {
+  padding: 1.2rem 1.6rem;
+}
+
+.navbar .menu-btn {
+  font-size: 4rem;
+  color: var(--green);
+  cursor: pointer;
+}
+
+.navbar .side-nav-wrapper {
+  position: fixed;
+  width: 100vw;
+  top: 0%;
+  right: -120%;
+  height: 100vh;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 1;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.navbar .side-nav-wrapper.active {
+  right: 0%;
+}
+
+.navbar .side-blur-effect {
+  width: 25%;
+  height: 100%;
+  background-color: var(--navy-shadow);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+
+.navbar .side-nav-content {
+  width: 75%;
+  background-color: var(--light-navy);
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.navbar .close-nav-wrapper {
+  position: absolute;
+  right: 5%;
+  top: 3%;
+}
+
+.navbar .side-nav-content ul {
+  padding-left: 0;
+  margin-top: 30%;
+}
+
+.navbar .side-nav-content li {
+  text-align: center;
+  margin: 2rem;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.navbar .side-nav-content li a {
+  margin-top: 8px;
+}
+
+.navbar .side-nav-content .btn-resume {
+  padding: 1.8rem 5rem;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin-top: 3rem;
+  font-family: var(--font-fira);
+}
+
+.navbar .side-nav-content .btn-resume:focus {
+  color: var(--green);
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media screen and (min-width: 500px) {
+  .navbar .side-blur-effect {
+    width: 40%;
+  }
+
+  .navbar .side-nav-content {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .navbar {
+    padding: 1rem 4rem;
+  }
+
+  .navbar .side-nav,
+  .navbar .side-nav-wrapper {
+    display: none;
+  }
+
+  .navbar .top-nav-container .menu-list-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+  .navbar li {
+    font-size: 1.4rem;
+  }
+}
+
+@keyframes rotate {
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}

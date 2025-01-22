@@ -1,0 +1,59 @@
+.project-section {
+  padding: 4.5rem 2.5rem;
+}
+
+.project-section .sub-heading {
+  font-size: 2.4rem;
+  color: var(--lightest-slate);
+  font-weight: 600;
+  text-align: center;
+  margin-top: 14rem;
+}
+
+.project-section .other-project {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.8rem;
+  -webkit-column-gap: 1.8rem;
+  -moz-column-gap: 1.8rem;
+  column-gap: 1.8rem;
+  margin-top: 6rem;
+}
+
+@media screen and (min-width: 500px) {
+  .project-section {
+    padding: 0 5rem;
+  }
+
+  .project-section .sub-heading {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-section .other-project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .project-section {
+    padding: 0 10rem;
+  }
+}
+
+/* =======For when Others project is more than 2==== */
+
+@media screen and (min-width: 1024px) {
+  .project-section .other-project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .project-section {
+    padding: 0 15rem;
+  }
+}

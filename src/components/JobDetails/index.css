@@ -1,0 +1,62 @@
+.active-company h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--lightest-slate);
+  margin-bottom: 1rem;
+}
+
+.active-company h2 span {
+  color: var(--green);
+}
+
+.active-company div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.active-company .contract-type {
+  margin-left: 1.5rem;
+  border: 1px solid var(--green);
+  color: var(--slate);
+  padding: 4px 6px;
+  border-radius: 5px;
+}
+
+.active-company p {
+  font-family: var(--font-firs);
+}
+
+.active-company .task-container {
+  list-style: none;
+  padding-left: 0;
+}
+
+.active-company .task-container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.active-company .task-container li span {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin-right: 2rem;
+  margin-top: 6px;
+  color: var(--green);
+}
+
+.active-company .task-container li p {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .active-company .contract-type {
+    font-size: 1.3rem;
+  }
+}
