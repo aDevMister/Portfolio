@@ -1,6 +1,7 @@
 import purse from "../../assets/purse.png";
 import doc from "../../assets/doc.png";
 import ainameit from "../../assets/ainameit.png";
+import minidash from "../../assets/minidash.png"
 
 const Projects = [
   {
@@ -36,6 +37,16 @@ const Projects = [
     img: doc,
     featured: true,
   },
+  {
+    id:4,
+    title: "A simple React dashboard.",
+    details: "This project is a simple React dashboard where you can view, add, update, and delete user information. The dashboard fetches data from an API and allows you to easily manage users. It also supports sorting, searching, and pagination.",
+    tools: "React.js Styled Components Axios Zustand",
+    repo: null,
+    url:"https://mini-dashboard-gray.vercel.app/",
+    img: minidash,
+
+  }
   
 ];
 
