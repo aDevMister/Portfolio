@@ -23,10 +23,12 @@ const Hero = ({ aos }) => {
           {isDone ? (
             <>
               <p>
-                I&apos;m a developer with a deep passion for creating
-                experiences that go beyond just functionality. For me, coding is
-                about crafting products that not only work, but truly resonate
-                with the people who use them. Right now, I&apos;m working at
+                I&apos;m a developer who loves building more than just functional
+                products, I aim to create experiences that genuinely connect with
+                people. To me, coding isn&apos;t just about writing efficient
+                code, it&apos;s about crafting something that feels natural,
+                intuitive and meaningful to the user. Right now, I&apos;m part
+                of the team at
                 <span style={{ padding: "0 6px" }}>
                   <a
                     href="https://www.ainameit.com/"
@@ -34,11 +36,13 @@ const Hero = ({ aos }) => {
                     rel="noopener noreferrer"
                     class="animated-link"
                   >
-                    AiNameIt
+                    AiNameIt,
                   </a>
                 </span>
-                , where I focus on building intuitive, interactive solutions
-                that solve real-world problems.
+                where I build interactive solutions that simplify real
+                problems. Turning complex ideas into intuitive experiences is
+                what drives me, nothing beats seeing people genuinely enjoy what
+                I&apos;ve built.
               </p>
 
               <a
@@ -56,16 +60,25 @@ const Hero = ({ aos }) => {
       <div className="sticky-bottom">
         <div className="sticky-left">
           <div className="social-icons">
-            <a href="https://github.com/aDevMister" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/aDevMister"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FiGithub className="horizontal-icon" />
             </a>
 
-            <a href="https://twitter.com/devgorithm" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com/devgorithm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <RiTwitterXLine className="horizontal-icon" />
             </a>
             <a
               href="https://www.linkedin.com/in/abdulqudusajape/"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FiLinkedin className="horizontal-icon" />
             </a>
@@ -75,7 +88,11 @@ const Hero = ({ aos }) => {
 
         <div className="sticky-right">
           <div className="my-mail">
-            <a href="mailto:abdulqudusajape05@gmail.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="mailto:abdulqudusajape05@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               abdulqudusajape05@gmail.com
             </a>
           </div>
