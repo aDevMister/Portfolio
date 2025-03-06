@@ -69,7 +69,7 @@ const Hero = ({ aos }) => {
             </a>
 
             <a
-              href="https://twitter.com/devgorithm"
+              href="https://x.com/devgorithm"
               target="_blank"
               rel="noopener noreferrer"
             >
