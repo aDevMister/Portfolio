@@ -2,10 +2,24 @@ import purse from "../../assets/purse.png";
 import doc from "../../assets/doc.png";
 import ainameit from "../../assets/ainameit.png";
 import minidash from "../../assets/minidash.png"
+import noorspath from "../../assets/noorspath.png"
+
 
 const Projects = [
   {
     id: 1,
+    title: "Noor's Path",
+    details:
+      "Noor's Path is dedicated to providing quality education and healthcare, empowering children to reach their full potential.",
+    tools: "Next.js TypeScript Tailwind CSS  Framer Motion Shadcn Embla Carousel ",
+    repo: null,
+    url: "https://noorspath.vercel.app/",
+    img: noorspath,
+    featured: true,
+  },
+  
+  {
+    id: 2,
     title: "Business Name Generator",
     details:
       "A tool that helps generate business names with available domains using AI in less than a minute.",
@@ -15,17 +29,8 @@ const Projects = [
     img: ainameit,
     featured: true,
   },
-  {
-    id: 2,
-    title: "Purse",
-    details:
-      "Purse is a comprehensive digital platform designed to streamline the management of fiat currencies. It enables users to save, receive, transact, exchange, and oversee multiple traditional currencies within a single, user-friendly interface.",
-    tools: "Next.js Chart.js AntDesign JavaScript TailwindCSS",
-    repo: null,
-    url: "https://purse.tulupay.com/",
-    img: purse,
-    featured: true,
-  },
+
+  
   {
     id: 3,
     title: "Tulupay Documentation Website",
@@ -38,7 +43,18 @@ const Projects = [
     featured: true,
   },
   {
-    id:4,
+    id: 4,
+    title: "Purse",
+    details:
+      "Purse is a comprehensive digital platform designed to streamline the management of fiat currencies. It enables users to save, receive, transact, exchange, and oversee multiple traditional currencies within a single, user-friendly interface.",
+    tools: "Next.js Chart.js AntDesign JavaScript TailwindCSS",
+    repo: null,
+    url: "https://purse.tulupay.com/",
+    img: purse,
+    featured: true,
+  },
+  {
+    id:5,
     title: "A simple React dashboard.",
     details: "This project is a simple React dashboard where you can view, add, update, and delete user information. The dashboard fetches data from an API and allows you to easily manage users. It also supports sorting, searching, and pagination.",
     tools: "React.js Styled Components Axios Zustand",
