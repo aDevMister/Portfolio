@@ -1,62 +1,69 @@
 import "./index.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { RiTwitterXLine } from "react-icons/ri";
 
 // Components
 import Navbar from "../../components/Navbar";
-import Typist from "react-typist";
+
+const phrases = [
+  "I build with people in mind.",
+  "I turn ideas into experiences.",
+  "I simplify the complex.",
+  "I care about how things feel.",
+];
 
 const Hero = ({ aos }) => {
-  const [isDone, setIsDone] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    if (isPaused) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % phrases.length);
+    }, 3000); // Change phrase every 3s
+
+    return () => clearInterval(interval);
+  }, [isPaused]);
 
   return (
     <div className="hero">
       <Navbar />
       <div data-aos={aos} className="hero-body container">
         <div className="body-wrapper">
-          <Typist onTypingDone={() => setIsDone(true)}>
-            <h4>Hey, I&apos;m</h4>
-            <h1>AbdulQudus Ajape.</h1>
-            <h2>I bring web ideas to life.</h2>
-          </Typist>
-          {isDone ? (
-            <>
-              <p>
-                I&apos;m a developer who loves building more than just functional
-                products, I aim to create experiences that genuinely connect with
-                people. To me, coding isn&apos;t just about writing efficient
-                code, it&apos;s about crafting something that feels natural,
-                intuitive and meaningful to the user. Right now, I&apos;m part
-                of the team at
-                <span style={{ padding: "0 6px" }}>
-                  <a
-                    href="https://www.ainameit.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="animated-link"
-                  >
-                    AiNameIt,
-                  </a>
-                </span>
-                where I build interactive solutions that simplify real
-                problems. Turning complex ideas into intuitive experiences is
-                what drives me, nothing beats seeing people genuinely enjoy what
-                I&apos;ve built.
-              </p>
+          <h4>Hey, I&apos;m</h4>
+          <h1>AbdulQudus Ajape.</h1>
 
-              <a
-                href="mailto:abdulqudusajape05@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-hero"
-              >
-                Get in touch
-              </a>
-            </>
-          ) : null}
+          <div
+            className="fade-phrase"
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+          >
+            <h2 key={currentIndex}>{phrases[currentIndex]}</h2>
+          </div>
+
+          <p>
+            I build more than just software — I build for people.
+            <br />
+            I&apos;m a developer who cares about how things feel, not just how they work.
+            For me, coding isn&apos;t just a technical task — it&apos;s a creative process of
+            shaping ideas into simple, intuitive experiences. I love turning messy problems
+            into products that just make sense. If someone walks away thinking,
+            <em> &quot;That was easy,&quot;</em> then I know I&apos;ve done it right.
+          </p>
+
+          <a
+            href="mailto:abdulqudusajape05@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-hero"
+          >
+            Get in touch
+          </a>
         </div>
       </div>
+
       <div className="sticky-bottom">
         <div className="sticky-left">
           <div className="social-icons">

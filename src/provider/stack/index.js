@@ -1,1 +1,1 @@
-export const stack = ['JavaScript  (ES6+)', 'TypeScript', 'React.js', 'Next.js', 'Shadcn', 'CSS', 'Tailwind CSS', "Restful Api", "Axios", "Zustand", "Styled Component", 'Framer-Motion', 'MySQL']
+export const stack = ['JavaScript  (ES6+)', 'TypeScript', 'React.js', 'Next.js', 'Shadcn', 'Styled Component', 'Tailwind CSS', "Restful Api", "Axios", "Zustand", "Styled Component", 'Framer-Motion', 'MySQL', 'Git', 'GitHub', 'Figma', 'Postman',  'Linux', 'MongoDB',  'Express.js', 'Node.js', 'Redux Toolkit', 'React Query'];

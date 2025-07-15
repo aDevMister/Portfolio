@@ -60,7 +60,7 @@ const Experience = [
     company: "AiNameIt",
     url: "https://www.ainameit.com/",
     startDate: "May 2024",
-    endDate: "Present",
+    endDate: "January 2025",
     tasks: [
       {
         id: 1,
