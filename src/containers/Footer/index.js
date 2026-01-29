@@ -13,7 +13,7 @@ const Footer = () => {
                     <FiGithub size={21} className="small-icon" />
                 </a>
               
-                <a href="https://x.com/devgorithm" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/AbdulQudusAjape" target="_blank" rel="noopener noreferrer">
                     <RiTwitterXLine size={21} className="small-icon" />
                 </a>
                 <a href="https://www.linkedin.com/in/abdulqudusajape/" target="_blank" rel="noopener noreferrer">

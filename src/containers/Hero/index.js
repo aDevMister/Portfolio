@@ -77,7 +77,7 @@ const Hero = ({ aos }) => {
             </a>
 
             <a
-              href="https://x.com/devgorithm"
+              href="https://x.com/AbdulQudusAjape"
               target="_blank"
               rel="noopener noreferrer"
             >
