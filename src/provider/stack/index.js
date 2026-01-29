@@ -1,1 +1,22 @@
-export const stack = ['JavaScript  (ES6+)', 'TypeScript', 'React.js', 'Next.js', 'Shadcn', 'Styled Component', 'Tailwind CSS', "Restful Api", "Axios", "Zustand", "Styled Component", 'Framer-Motion', 'MySQL', 'Git', 'GitHub', 'Figma', 'Postman',  'Linux', 'MongoDB',  'Express.js', 'Node.js', 'Redux Toolkit', 'React Query'];
+export const stack = [
+  'JavaScript (ES6+)',
+  'TypeScript',
+  'React.js',
+  'Next.js',
+  'Tailwind CSS',
+  'Supabase',
+  'OpenAI API',
+  'Fabric.js',
+  'Canvas API',
+  'RESTful APIs',
+  'Shadcn/ui',
+  'Styled Components',
+  'Framer Motion',
+  'Axios',
+  'Zustand',
+  'Git & GitHub',
+  'Figma',
+  'Postman',
+  'Vercel',
+  'VS Code',
+];

@@ -1,8 +1,8 @@
 const Experience = [
   {
     id: 1,
-    title: "Frontend Developer",
-    company: "Toshconsult",
+    title: "Web Developer",
+    company: "Toshconsult Technologies Inc.",
     url: null,
     startDate: "April 2023",
     endDate: "October 2023",
@@ -10,24 +10,30 @@ const Experience = [
       {
         id: 1,
         details:
-          "Write modern, performant, maintainable code for internal projects",
+          "Developed responsive web applications using React, HTML5, CSS3, and JavaScript, increasing user engagement by 30%",
       },
       {
         id: 2,
         details:
-          "Proficient in working with JavaScript and related technologies, including HTML, CSS, React  and Bootstrap, with experience using Git and GitHub for version control.",
+          "Standardized UI components using Bootstrap and Tailwind CSS, improving design consistency by 20%",
       },
       {
         id: 3,
-        details: "Communicate with the team of developers on a weekly basis",
+        details:
+          "Collaborated with cross-functional teams including designers and backend developers, increasing team efficiency by 25%",
+      },
+      {
+        id: 4,
+        details:
+          "Implemented version control best practices using Git and GitHub for seamless code management",
       },
     ],
-    contract: "Internship",
+    contract: "Full-time",
   },
   {
     id: 2,
-    title: "Frontend Engineer",
-    company: "MSME",
+    title: "Frontend Developer",
+    company: "MSME Ecosystem Ltd",
     url: "https://msmes.io/",
     startDate: "July 2023",
     endDate: "July 2024",
@@ -35,28 +41,34 @@ const Experience = [
       {
         id: 1,
         details:
-          "Contributed to the development and optimization of processes for building efficient, high-performance digital solutions and web applications.",
+          "Developed company documentation website using Next.js and Tailwind CSS, improving developer onboarding by 35%",
       },
       {
         id: 2,
         details:
-          "Developed the company’s documentation website using Next.js and Tailwind CSS, improving accessibility and user experience.",
+          "Built reusable component library with 50+ components, reducing project development time by 20%",
       },
       {
         id: 3,
-        details: "Participate in meetings",
+        details:
+          "Integrated RESTful APIs, collaborating with backend team to improve data consistency by 30%",
       },
       {
         id: 4,
         details:
-          "Built reusable Next.js components that streamlined development, reducing time spent on projects by 20%.",
+          "Optimized website performance through code splitting and caching, achieving 15% improvement in Core Web Vitals",
+      },
+      {
+        id: 5,
+        details:
+          "Conducted thorough testing and code reviews, reducing production bugs by 40%",
       },
     ],
     contract: "Full-time",
   },
   {
     id: 3,
-    title: "Software Engineer & Co-founder",
+    title: "Co-Founder & Frontend Engineer",
     company: "AiNameIt",
     url: "https://www.ainameit.com/",
     startDate: "May 2024",
@@ -65,36 +77,32 @@ const Experience = [
       {
         id: 1,
         details:
-          "Co-founded and launched AiNameIt, an Ai tool specializing in generating unique brand names, domains, and taglines.",
+          "Co-founded and architected AI-powered SaaS platform using Next.js, React, TypeScript, and OpenAI API",
       },
       {
         id: 2,
         details:
-          "Interface with engineers and designers on daily basis, on improving and developing the product.",
+          "Engineered production-grade AI integration achieving 40% improvement in user satisfaction and retention",
       },
       {
         id: 3,
         details:
-          "Enhanced platform visibility through SEO-optimized content and social media engagement.",
+          "Implemented responsive UI/UX with Tailwind CSS, reducing page load time to 2.5 seconds",
       },
       {
         id: 4,
         details:
-          "Collaborated on strategic planning, shaping the vision and goals for AiNameIt",
+          "Designed digital marketing strategies driving platform to 1,000+ active users",
       },
       {
         id: 5,
-        details: "Lead scrum meetings occasionally.",
+        details:
+          "Collaborated on product roadmap and technical architecture for scalable growth",
       },
       {
         id: 6,
         details:
-          "Enhanced platform visibility through SEO-optimized content and social media engagement",
-      },
-      {
-        id: 7,
-        details:
-          "Skilled in using TypeScript, JavaScript, and Tailwind CSS, along with libraries and frameworks such as React.js and Next.js. Experienced with MYSQL, Git, and GitHub for efficient development and version control.",
+          "Led development sprints and coordinated with design team for feature implementation",
       },
     ],
     contract: "Full-time",

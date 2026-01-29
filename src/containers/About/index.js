@@ -5,7 +5,6 @@ import { stack } from "../../provider/stack";
 import Header from "../../components/Header";
 
 const About = ({ aos }) => {
-  //   const [imgHover, setImgHover] = useState(false);
 
   const displayStackList = () => {
     return stack.map((each, i) => (
@@ -24,36 +23,27 @@ const About = ({ aos }) => {
       <div className="about-body">
         <div className="about-content">
           <p>
-            Hi, I&apos;m AbdulQudus, a developer passionate about turning ideas
-            into impactful digital experiences through code.
+            Hi, I&apos;m AbdulQudus, a Frontend Engineer passionate about building
+            web applications that solve real problems. I specialize in React, Next.js, JavaScript
+            and TypeScript, with experience integrating AI features using OpenAI&apos;s API.
           </p>
           <p>
-            Coding is my creative outlet and problem-solving tool. Each project
-            I take on is an opportunity to learn, grow, and make a real
-            difference.
+            I&apos;ve founded and built 3 web applications, including AiNameIt an AI-powered
+            SaaS platform serving over 167+ users. Currently, I&apos;m developing ProofArk
+            (a certificate generator using Fabric.js) and Sunnah Companion (an Islamic learning
+            platform with AI-powered features).
           </p>
           <p>
-            I&apos;m driven by building solutions that matter and collaborating
-            with like-minded individuals. Let&apos;s create something amazing
-            together!
+            What drives me is building products that people actually use. I focus on performance
+            optimization, clean code, and user experience. When I&apos;m not coding, I&apos;m
+            learning new technologies or helping other developers grow.
           </p>
 
           <p>
-            Here are a few technologies I&apos;ve been working with recently:
+            Here are the technologies I work with:
           </p>
           <div className="my-stack">{displayStackList()}</div>
         </div>
-        {/*    <div
-          className="wrapper"
-          onMouseOver={() => setImgHover(true)}
-          onMouseLeave={() => setImgHover(false)}
-        >
-          <div className="my-image-container">
-            <div className={`shade ${imgHover && "hidden"}`}></div>
-            <img src={myImage} alt="AbdulQudus" className="my-image" />
-            <div className={`frame ${imgHover && "resize"}`}></div>
-          </div>
-        </div> */}
       </div>
     </section>
   );

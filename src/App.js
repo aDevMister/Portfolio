@@ -44,7 +44,7 @@ function App() {
             <Contact />
             <Footer />
           </div>
-          <Analytics />
+          <Analytics mode={process.env.NODE_ENV === 'production' ? 'auto' : 'development'} />
         </>
       )}
     </div>

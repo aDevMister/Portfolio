@@ -7,10 +7,10 @@ import { RiTwitterXLine } from "react-icons/ri";
 import Navbar from "../../components/Navbar";
 
 const phrases = [
-  "I build with people in mind.",
-  "I turn ideas into experiences.",
-  "I simplify the complex.",
-  "I care about how things feel.",
+  "I build AI-powered web applications.",
+  "I turn ideas into reality.",
+  "I create responsive experiences.",
+  "I care about performance and UX.",
 ];
 
 const Hero = ({ aos }) => {
@@ -22,7 +22,7 @@ const Hero = ({ aos }) => {
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % phrases.length);
-    }, 3000); // Change phrase every 3s
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [isPaused]);
@@ -44,13 +44,14 @@ const Hero = ({ aos }) => {
           </div>
 
           <p>
-            I build more than just software — I build for people.
+            I&apos;m a Frontend Engineer who builds more than just code, I build experiences.
             <br />
-            I&apos;m a developer who cares about how things feel, not just how they work.
-            For me, coding isn&apos;t just a technical task — it&apos;s a creative process of
-            shaping ideas into simple, intuitive experiences. I love turning messy problems
-            into products that just make sense. If someone walks away thinking,
-            <em> &quot;That was easy,&quot;</em> then I know I&apos;ve done it right.
+            I specialize in React, Next.js, JavaScript, and TypeScript, creating responsive web applications
+            that are fast, accessible, and intuitive. I&apos;ve founded 3 web applications including
+            an AI-powered SaaS serving 167+ users. Whether it&apos;s integrating AI features,
+            optimizing performance, or building from scratch, I focus on solutions that make a
+            real impact.
+            <em> If it works well and feels right, I&apos;ve done my job.</em>
           </p>
 
           <a

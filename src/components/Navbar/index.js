@@ -3,6 +3,8 @@ import { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 
+// IMPORTANT: Update this path to your actual resume PDF location
+// Place your updated resume PDF in /public/resume.pdf
 const resumePath = "/resume.pdf";
 
 const navItems = (handleLink) => (
@@ -47,10 +49,11 @@ const navItems = (handleLink) => (
     </ul>
     <a
       href={resumePath}
-      download="resume.pdf"
+      download="Abdul-Qudus_Ajape_Frontend_Engineer_Resume.pdf"
       target="_blank"
       rel="noopener noreferrer"
       className="btn btn-resume"
+      aria-label="Download Resume"
     >
       Resume
     </a>
@@ -70,15 +73,21 @@ const Navbar = () => {
     setNavModal(false);
     setActive(false);
     event.preventDefault();
-    document
-      .getElementById(section)
-      .scrollIntoView({ behavior: "auto", block: "start", inline: "start" });
+    
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: "smooth", // Changed from "auto" to "smooth" for better UX
+        block: "start", 
+        inline: "start" 
+      });
+    }
   };
 
   return (
     <div className="navbar">
       <div className="top-nav-container">
-        <a href="/" className="logo">
+        <a href="/" className="logo" aria-label="Home">
           <div>A</div>
           <span>+</span>
         </a>
@@ -87,12 +96,17 @@ const Navbar = () => {
           <BiMenuAltRight
             className="menu-btn open-side-nav"
             onClick={handleModal}
+            aria-label="Open navigation menu"
+            role="button"
+            tabIndex={0}
           />
         </div>
       </div>
       <div
         className={active ? "side-nav-wrapper active" : "side-nav-wrapper"}
         onClick={handleModal}
+        role="dialog"
+        aria-modal={active}
       >
         <div className="side-blur-effect"></div>
         <div className="side-nav-content" onClick={(e) => e.stopPropagation()}>
@@ -100,6 +114,9 @@ const Navbar = () => {
             <AiOutlineClose
               className="menu-btn close-side-nav"
               onClick={handleModal}
+              aria-label="Close navigation menu"
+              role="button"
+              tabIndex={0}
             />
           </div>
           {navItems(handleLink)}

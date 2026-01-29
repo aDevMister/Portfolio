@@ -1,7 +1,6 @@
 import './index.css';
 import { useState } from 'react';
 
-
 // Component
 import Header from '../../components/Header';
 import JobDetails from '../../components/JobDetails';
@@ -11,16 +10,21 @@ import experience from '../../provider/experience';
 
 const WorkedAt = ({aos}) => {
     const [focus, setFocus] = useState(false);
-    const [currentId, setCurrentId] = useState(experience.length);
+    
+    // Set default to most recent experience (highest id)
+    const sortedExp = experience.sort((a,b) => b.id - a.id);
+    const [currentId, setCurrentId] = useState(sortedExp[0]?.id || 1);
 
     const toggleCompany = (id) => {
-        setCurrentId(id)
-        setFocus(true)
+        setCurrentId(id);
+        setFocus(true);
     };
 
-    const sortedExp = experience.sort((a,b) => b.id - a.id)
+    const currentExperience = sortedExp.find(data => data.id === currentId);
+    
+    if (!currentExperience) return null;
 
-    const {title, company, url, startDate, endDate, tasks, contract} = sortedExp.find(data => data.id === currentId);
+    const {title, company, url, startDate, endDate, tasks, contract} = currentExperience;
 
     return ( 
         <section data-aos={aos} className='experience-section' id='experience'>
@@ -30,11 +34,19 @@ const WorkedAt = ({aos}) => {
                     <ul>
                         {sortedExp.map(value => {
                             const {id, company} = value;
-                            const noFocus = id === currentId ? 'active' : null
-                            return <li 
-                                className={focus && id === currentId ? 'active focus' : noFocus} 
-                                key={id} 
-                                onClick={() => toggleCompany(id)}>{company}</li>
+                            const isActive = id === currentId;
+                            return (
+                                <li 
+                                    className={`${isActive ? 'active' : ''} ${focus && isActive ? 'focus' : ''}`}
+                                    key={id} 
+                                    onClick={() => toggleCompany(id)}
+                                    role="tab"
+                                    aria-selected={isActive}
+                                    tabIndex={isActive ? 0 : -1}
+                                >
+                                    {company}
+                                </li>
+                            );
                         })}
                     </ul>
                 </div>
@@ -53,3 +65,4 @@ const WorkedAt = ({aos}) => {
 }
  
 export default WorkedAt;
+
