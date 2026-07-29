@@ -1,4 +1,3 @@
-
 import purse from "../../assets/purse.png";
 import doc from "../../assets/doc.png";
 import ainameit from "../../assets/ainameit.png";
@@ -13,7 +12,7 @@ const Projects = [
     id: 1,
     title: "AiNameIt - AI-Powered SaaS",
     details:
-      "Co-founded AI-powered platform generating unique brand names and checking domain availability. Built with Next.js, React, TypeScript, and OpenAI API. Launched MVP in 8 weeks, now serving 1,000+ users with 40% retention improvement.",
+      "Served as Chief Engineer for an AI-powered platform generating unique brand names and checking domain availability. Built with Next.js, React, TypeScript, and OpenAI API. Launched MVP in 8 weeks, now serving 1,000+ users with 40% retention improvement.",
     tools: "Next.js TypeScript OpenAI API Supabase Tailwind CSS Zustand",
     repo: null,
     url: "https://ainameit.com",
@@ -25,7 +24,7 @@ const Projects = [
     id: 2,
     title: "ProofArk - Certificate Generator",
     details:
-      "Founded and building professional certificate generator platform with canvas manipulation using Fabric.js. Features real-time preview, drag-and-drop editing, custom styling, and high-resolution PDF export. Currently in development with plans for public launch.",
+      "Serving as Chief Engineer building a professional certificate generator platform with canvas manipulation using Fabric.js. Features real-time preview, drag-and-drop editing, custom styling, and high-resolution PDF export. Currently in development with plans for public launch.",
     tools: "Next.js TypeScript Fabric.js Supabase Tailwind CSS Canvas API",
     repo: null,
     url: "https://proofark.vercel.app/",
@@ -37,7 +36,7 @@ const Projects = [
     id: 3,
     title: "Sunnah Companion - Islamic Learning Platform",
     details:
-      "Founded and developing comprehensive Islamic learning platform with stories, interactive quizzes, AI-powered personalized learning, prayer times, and Quranic resources. Built with Next.js, Supabase, and OpenAI API integration. Launching soon for global Muslim community.",
+      "Serving as Chief Engineer developing a comprehensive Islamic learning platform with stories, interactive quizzes, AI-powered personalized learning, prayer times, and Quranic resources. Built with Next.js, Supabase, and OpenAI API integration. Launching soon for global Muslim community.",
     tools: "Next.js TypeScript Supabase OpenAI API Tailwind CSS",
     repo: null,
     url: "https://sunnahcompanion.vercel.app/",

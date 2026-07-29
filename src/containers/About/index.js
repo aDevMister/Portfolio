@@ -28,7 +28,7 @@ const About = ({ aos }) => {
             and TypeScript, with experience integrating AI features using OpenAI&apos;s API.
           </p>
           <p>
-            I&apos;ve founded and built 3 web applications, including AiNameIt an AI-powered
+            I&apos;ve served as Chief Engineer on 3 web applications, including AiNameIt an AI-powered
             SaaS platform serving over 167+ users. Currently, I&apos;m developing ProofArk
             (a certificate generator using Fabric.js) and Sunnah Companion (an Islamic learning
             platform with AI-powered features).

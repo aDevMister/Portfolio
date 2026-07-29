@@ -68,7 +68,7 @@ const Experience = [
   },
   {
     id: 3,
-    title: "Co-Founder & Frontend Engineer",
+    title: "Chief Engineer",
     company: "AiNameIt",
     url: "https://www.ainameit.com/",
     startDate: "May 2024",
@@ -77,7 +77,7 @@ const Experience = [
       {
         id: 1,
         details:
-          "Co-founded and architected AI-powered SaaS platform using Next.js, React, TypeScript, and OpenAI API",
+          "Architected AI-powered SaaS platform using Next.js, React, TypeScript, and OpenAI API",
       },
       {
         id: 2,
@@ -97,7 +97,7 @@ const Experience = [
       {
         id: 5,
         details:
-          "Collaborated on product roadmap and technical architecture for scalable growth",
+          "Drove product roadmap and technical architecture decisions for scalable growth",
       },
       {
         id: 6,

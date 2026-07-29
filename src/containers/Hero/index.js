@@ -43,11 +43,11 @@ const Hero = ({ aos }) => {
             <h2 key={currentIndex}>{phrases[currentIndex]}</h2>
           </div>
 
-          <p>
+         <p>
             I&apos;m a Frontend Engineer who builds more than just code, I build experiences.
             <br />
             I specialize in React, Next.js, JavaScript, and TypeScript, creating responsive web applications
-            that are fast, accessible, and intuitive. I&apos;ve founded 3 web applications including
+            that are fast, accessible, and intuitive. I&apos;ve served as Chief Engineer on 3 web applications including
             an AI-powered SaaS serving 167+ users. Whether it&apos;s integrating AI features,
             optimizing performance, or building from scratch, I focus on solutions that make a
             real impact.
