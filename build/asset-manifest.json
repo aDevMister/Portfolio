@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f3f6ca68.css",
+    "main.js": "/static/js/main.c613b7e9.js",
+    "static/media/noorspath.png": "/static/media/noorspath.857de1574d665faff546.png",
+    "static/media/ainameit.png": "/static/media/ainameit.c900eafd6a7ca9fae6d8.png",
+    "static/media/adssembly.png": "/static/media/adssembly.2e68023e8c1555262459.png",
+    "static/media/sabinow.png": "/static/media/sabinow.b5df7edc0c7db9007946.png",
+    "static/media/workproof.png": "/static/media/workproof.4a3ce1adc8fa3e150f1a.png",
+    "static/media/dobbizsignature.png": "/static/media/dobbizsignature.e94ac35ed90dfe035a32.png",
+    "static/media/foundspec.png": "/static/media/foundspec.4d96dfc8300799ce1589.png",
+    "static/media/doc.png": "/static/media/doc.7168163cc165bded78db.png",
+    "static/media/purse.png": "/static/media/purse.04ca7d86b9274aed0538.png",
+    "static/media/proofark.png": "/static/media/proofark.d35a2c7d623f61ce6a3f.png",
+    "static/media/minidash.png": "/static/media/minidash.dfc7f739bb4cd445ae1e.png",
+    "static/media/sunnahcompanion.png": "/static/media/sunnahcompanion.7d47eb963a02173ed0e6.png",
+    "index.html": "/index.html",
+    "main.f3f6ca68.css.map": "/static/css/main.f3f6ca68.css.map",
+    "main.c613b7e9.js.map": "/static/js/main.c613b7e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3f6ca68.css",
+    "static/js/main.c613b7e9.js"
+  ]
+}
