@@ -3,9 +3,13 @@ import doc from "../../assets/doc.png";
 import ainameit from "../../assets/ainameit.png";
 import minidash from "../../assets/minidash.png";
 import noorspath from "../../assets/noorspath.png";
-// ADD THESE IMAGES TO YOUR ASSETS FOLDER:
 import proofark from "../../assets/proofark.png";
 import sunnahcompanion from "../../assets/sunnahcompanion.png";
+import dobbizsignature from "../../assets/dobbizsignature.png";
+import workproof from "../../assets/workproof.png";
+import foundspec from "../../assets/foundspec.png";
+import adssembly from "../../assets/adssembly.png";
+import sabinow from "../../assets/sabinow.png";
 
 const Projects = [
   {
@@ -18,49 +22,85 @@ const Projects = [
     url: "https://ainameit.com",
     img: ainameit,
     featured: true,
-    status: "live", // Live with users
+    status: "live",
   },
   {
     id: 2,
     title: "ProofArk - Certificate Generator",
     details:
-      "Serving as Chief Engineer building a professional certificate generator platform with canvas manipulation using Fabric.js. Features real-time preview, drag-and-drop editing, custom styling, and high-resolution PDF export. Currently in development with plans for public launch.",
+      "Professional certificate generator with canvas manipulation, real-time preview, drag-and-drop editing, custom styling, and high-resolution PDF export.",
     tools: "Next.js TypeScript Fabric.js Supabase Tailwind CSS Canvas API",
     repo: null,
     url: "https://proofark.vercel.app/",
     img: proofark,
     featured: true,
-    status: "development", // In development
+    status: "development",
   },
   {
     id: 3,
     title: "Sunnah Companion - Islamic Learning Platform",
     details:
-      "Serving as Chief Engineer developing a comprehensive Islamic learning platform with stories, interactive quizzes, AI-powered personalized learning, prayer times, and Quranic resources. Built with Next.js, Supabase, and OpenAI API integration. Launching soon for global Muslim community.",
+      "Islamic learning platform featuring stories, interactive quizzes, personalized AI learning, prayer times, and Quranic resources for the global Muslim community.",
     tools: "Next.js TypeScript Supabase OpenAI API Tailwind CSS",
     repo: null,
     url: "https://sunnahcompanion.vercel.app/",
     img: sunnahcompanion,
     featured: true,
-    status: "development", // In development
+    status: "development",
   },
   {
     id: 4,
-    title: "Noor's Path",
+    title: "Dobbiz Signature",
     details:
-      "Modern website for educational and healthcare organization. Built with Next.js, TypeScript, and Framer Motion for smooth animations. Focused on accessibility and responsive design across all devices.",
+      "Luxury beauty and makeup website for a Houston-based beauty brand specializing in bridal makeup, soft glam, bold glam, traditional gele styling, hairstyling, and destination weddings. Features a portfolio gallery, service packages, pricing, appointment booking, customer testimonials, an online shop, account registration, and newsletter subscriptions.",
     tools: "Next.js TypeScript Tailwind CSS Framer Motion Shadcn Embla Carousel",
     repo: null,
-    url: "https://noorspath.vercel.app/",
-    img: noorspath,
+    url: "https://dobbizsignature.vercel.app/",
+    img: dobbizsignature,
     featured: true,
     status: "live",
   },
   {
     id: 5,
+    title: "WorkProof",
+    details:
+      "Work management platform for freelancers, contractors, and small businesses to organize jobs, track working hours, document completed work, and improve payment accountability. Features task tracking, clock-in and clock-out, photo evidence, invoices, expense tracking, customer signatures, PDF reports, and data backup.",
+    tools: "Bolt.new",
+    repo: null,
+    url: "https://workproof-saas-appli-v4y2.bolt.host/",
+    img: workproof,
+    featured: true,
+    status: "live",
+  },
+  {
+    id: 6,
+    title: "FoundSpec",
+    details:
+      "Product discovery platform designed to help users find, evaluate, and compare products through an intuitive interface.",
+    tools: "Unverified",
+    repo: null,
+    url: "https://foundspec-product-di-qyq3.bolt.host/",
+    img: foundspec,
+    featured: true,
+    status: "live",
+  },
+  {
+    id: 7,
+    title: "Adssembly",
+    details:
+      "Content, copywriting, and campaign workspace designed to help users organize marketing content and manage advertising campaigns in one place.",
+    tools: "Unverified",
+    repo: null,
+    url: "https://adssembly.vercel.app/",
+    img: adssembly,
+    featured: true,
+    status: "live",
+  },
+  {
+    id: 8,
     title: "Tulupay Documentation",
     details:
-      "Comprehensive developer documentation platform for Tulupay's payment API. Reduced developer onboarding time by 35% through clear structure, searchable content, and interactive examples. Fully responsive design.",
+      "Developer documentation platform for Tulupay's payment API, featuring searchable content, clear documentation, interactive examples, and a responsive interface.",
     tools: "Next.js JavaScript Tailwind CSS REST API",
     repo: null,
     url: "https://docs.tulupay.com/",
@@ -69,10 +109,10 @@ const Projects = [
     status: "live",
   },
   {
-    id: 6,
+    id: 9,
     title: "Purse by Tulupay",
     details:
-      "Admin dashboard for managing multi-currency fiat transactions. Built complex data tables, real-time monitoring, and analytics visualization. Integrated REST APIs for live transaction data.",
+      "Admin dashboard for managing multi-currency fiat transactions, featuring data tables, transaction monitoring, analytics visualizations, and REST API integration.",
     tools: "Next.js Chart.js Ant Design JavaScript Tailwind CSS",
     repo: null,
     url: "https://purse.tulupay.com/",
@@ -81,14 +121,38 @@ const Projects = [
     status: "live",
   },
   {
-    id: 7,
+    id: 10,
     title: "React User Dashboard",
     details:
-      "Simple yet functional dashboard for managing user data with full CRUD operations. Features sorting, searching, pagination, and clean UI. Demonstrates state management and API integration skills.",
+      "User management dashboard with CRUD operations, sorting, searching, pagination, state management, and API integration.",
     tools: "React.js Styled Components Axios Zustand",
     repo: null,
     url: "https://mini-dashboard-gray.vercel.app/",
     img: minidash,
+    featured: false,
+    status: "live",
+  },
+  {
+    id: 11,
+    title: "Noor's Path",
+    details:
+      "Modern website for an educational and healthcare organization, with responsive layouts and an accessible user experience.",
+    tools: "Next.js TypeScript Tailwind CSS Framer Motion Shadcn Embla Carousel",
+    repo: null,
+    url: "https://noorspath.vercel.app/",
+    img: noorspath,
+    featured: true,
+    status: "live",
+  },
+  {
+    id: 12,
+    title: "SabiNow",
+    details:
+      "Language and communication platform focused on helping users understand and express ideas naturally, without unnecessary grammar complexity.",
+    tools: "Unverified",
+    repo: null,
+    url: "https://sabinow.vercel.app/",
+    img: sabinow,
     featured: false,
     status: "live",
   },

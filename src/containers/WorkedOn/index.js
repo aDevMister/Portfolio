@@ -16,7 +16,7 @@ const WorkedOn = ({aos}) => {
 
             <div className="project-body">
                 <div className="major-project">
-                    {Projects?.slice(0,4).map(project => (
+                    {Projects?.slice(0,7).map(project => (
                         <MajorProject project={project} key={project.id} />
                     ))}
                 </div>
@@ -24,7 +24,7 @@ const WorkedOn = ({aos}) => {
                 <h1 className='sub-heading'>Other Noteworthy Projects</h1>
 
                 <div className="other-project">
-                    {Projects?.slice(4,5).map(project => (
+                    {Projects?.slice(7,12).map(project => (
                         <OtherProject project={project} key={project.id} />
                     ))}
                 </div>
