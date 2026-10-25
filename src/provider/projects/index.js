@@ -77,7 +77,7 @@ const Projects = [
     title: "FoundSpec",
     details:
       "Product discovery platform designed to help users find, evaluate, and compare products through an intuitive interface.",
-    tools: "Unverified",
+    tools: "",
     repo: null,
     url: "https://foundspec-product-di-qyq3.bolt.host/",
     img: foundspec,
@@ -89,7 +89,7 @@ const Projects = [
     title: "Adssembly",
     details:
       "Content, copywriting, and campaign workspace designed to help users organize marketing content and manage advertising campaigns in one place.",
-    tools: "Unverified",
+    tools: "",
     repo: null,
     url: "https://adssembly.vercel.app/",
     img: adssembly,
