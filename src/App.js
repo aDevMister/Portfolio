@@ -1,3 +1,4 @@
+
 import "./App.css";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
@@ -12,7 +13,6 @@ import {
   Stats,
 } from "./containers/index";
 import Loader from "./components/Loader";
-import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [showLoader, setShowLoader] = useState(true);
@@ -20,12 +20,12 @@ function App() {
   useEffect(() => {
     Aos.init({ duration: 600 });
 
-    // Set timeout to hide the loader after 1.5 seconds
+    // Hide the loader after 1.5 seconds
     const timer = setTimeout(() => {
       setShowLoader(false);
     }, 1500);
 
-    // Cleanup the timer to avoid memory leaks
+    // Clean up the timer
     return () => clearTimeout(timer);
   }, []);
 
@@ -44,7 +44,6 @@ function App() {
             <Contact />
             <Footer />
           </div>
-          <Analytics mode={process.env.NODE_ENV === 'production' ? 'auto' : 'development'} />
         </>
       )}
     </div>
